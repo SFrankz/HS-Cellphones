@@ -1,0 +1,90 @@
+<app-navbar></app-navbar>
+<body>
+<h1 style="text-align: center;">Welcome aboard Mr.{{usr.name}}
+</h1>
+<div  class="container mydiv">
+    <div id="card">
+    <div class="row card1"  *ngFor="let i of items" >
+        <div class="col-md-4" >
+            <div  class="bbb_deals inline-block" >
+                <div class="ribbon ribbon-top-right"></div>
+                <div class="bbb_deals_title" style="font-weight: bolder;">Today's Combo Offer</div>
+                <div id="">
+                <img style="width: 75px;height: 70px;"src="https://www.never-enough-shirts.com/wp-content/uploads/2018/06/label-discount-300x183.png">
+
+                <div style="font-weight: bolder;" class="bbb_deals_slider_container">
+                    <div class=" bbb_deals_item">
+                        <div class="bbb_deals_image"><img style="width: 200px;" [src]="i.imgurl" alt=""></div>
+                        <div class="bbb_deals_content">
+                            <div class="bbb_deals_info_line d-flex flex-row justify-content-start">
+                                <div class="bbb_deals_item_category">{{i.category}}</div>
+                                <div class="bbb_deals_item_price_a ml-auto"><s>{{i.oldprice}}₪</s></div>
+                            </div>
+                            <div class="bbb_deals_info_line d-flex flex-row justify-content-start">
+                                <div class="bbb_deals_item_name">{{i.name}}</div>
+                                <div class="bbb_deals_item_price ml-auto">{{i.price}}₪</div>
+                            </div>
+                            <div class="available">
+                                <button type="button" class="btn btn-outline-info" [routerLink]="['/products', i.serialnumber]" (click)="bla()">More Info</button> &nbsp;
+                                <a (click)="addtocart(i)" class="btn btn-info btn-lg">
+                                    <span class="glyphicon glyphicon-shopping-cart"></span> Add To Cart
+                                  </a>
+                                <div class="available_bar"><span style="width:17%"></span></div>
+                            </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>
+</div>
+<br>
+<marquee ><img  style="width: 200px;"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA8OzJYIyGfZNIspD0hHOpshvksGmDzT2GiA&usqp=CAU"></marquee><br>
+<div  class="container mydiv">
+    <div id="card">
+    <div class="row card1"  *ngFor="let i of newitems" >
+        <div class="col-md-4" >
+            <!-- bbb_deals --> 
+            <div style="font-weight: bolder;" class="bbb_deals inline-block" >
+                <div class="ribbon ribbon-top-right"></div>
+                <div class="bbb_deals_title" style="font-weight: bolder;">New Proudcts</div>
+                <div id="">
+                <img style="width: 75px;height: 70px;"src="https://cdn.pixabay.com/photo/2012/04/13/12/30/new-32199_1280.png">
+
+                <div class="bbb_deals_slider_container">
+                    <div class=" bbb_deals_item">
+                        <div class="bbb_deals_image"><img style="width: 200px;" [src]="i.imgurl" alt=""></div>
+                        <div class="bbb_deals_content">
+                            <div class="bbb_deals_info_line d-flex flex-row justify-content-start">
+                                <div class="bbb_deals_item_category">{{i.category}}</div>
+                            </div>
+                            <div class="bbb_deals_info_line d-flex flex-row justify-content-start">
+                                <div class="bbb_deals_item_name">    {{i.name}}</div>
+                                <div class="bbb_deals_item_price ml-auto">{{i.price}}₪</div>
+                            </div>
+                            <div class="available">
+                                <div class="available_line d-flex flex-row justify-content-start">
+                                    <div class="sold_stars ml-auto"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                                </div>
+                                <button type="button" class="btn btn-outline-info" [routerLink]="['/products', i.serialnumber]">More Info</button> &nbsp;
+
+                                <a (click)="addtocart(i)" class="btn btn-info btn-lg">
+                                    <span class="glyphicon glyphicon-shopping-cart"></span> Add To Cart
+                                  </a>
+                            </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>
+</div>
+</body>
+    <app-footer style="width: 100%;"></app-footer>
+    
+
+

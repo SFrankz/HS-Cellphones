@@ -1,0 +1,9 @@
+#card{
+    display: flex;
+    justify-content: space-between;
+}
+body{
+    height: 100%;
+    background-image:url(pr5.jpg); 
+    background-size: cover;
+}

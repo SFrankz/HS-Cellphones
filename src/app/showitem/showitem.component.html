@@ -1,0 +1,41 @@
+
+<div id="card" class="row">
+<div class="column" *ngFor="let i of product" >
+  <ng-container *ngIf="i.category==selecteditem">
+            <div  class="container mydiv">
+                      <div class="bbb_deals">
+                          <div class="ribbon ribbon-top-right"></div>
+                          <div class="bbb_deals_slider_container">
+                              <div class=" bbb_deals_item">
+                                  <div class="bbb_deals_image"><img style="width: 190px;" [src]="i.imgurl" alt=""></div>
+                                  <div class="bbb_deals_content">
+                                      <div class="bbb_deals_info_line d-flex flex-row justify-content-start">
+                                          <div class="bbb_deals_item_category">{{i.categoty}}</div>
+                                      </div>
+                                      <div class="bbb_deals_info_line d-flex flex-row justify-content-start">
+                                          <div class="bbb_deals_item_name" style="color: white;font-weight: bolder;">{{i.name}}</div>
+                                          <div class="bbb_deals_item_price ml-auto" style="color: white;">{{i.price}}₪</div>
+                                      </div>
+                                      <div class="available">
+                                          <div class="available_line d-flex flex-row justify-content-start">
+                                              <div class="sold_stars ml-auto"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                                          </div>
+                                          <button type="button" class="btn btn-outline-info" [routerLink]="['/products', i.serialnumber]">More Info</button> &nbsp;
+                                          <a (click)="addtocart(i)" class="btn btn-info btn-lg">
+                                            <span class="glyphicon glyphicon-shopping-cart"></span> Add To Cart
+                                          </a>
+                                          <div class="available_bar"><span style="width:17%"></span></div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </ng-container>
+            </div>
+
+
+
+          
+  
+  

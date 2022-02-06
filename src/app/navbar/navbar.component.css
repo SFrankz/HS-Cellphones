@@ -1,0 +1,11 @@
+img{
+    width: 30px;
+    height: 30px;
+    
+}
+button{
+    margin-left: 1650%;
+}
+.active-link{
+    font-weight: bold;
+}

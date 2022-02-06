@@ -1,0 +1,56 @@
+img{height: 200px;
+width: 150px;}
+.welcome{
+    
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+#new{
+    text-align: center;
+    margin-top: 50px;
+}
+#card{
+    display:flex;
+    justify-content: space-around;
+    
+}
+.card1{
+    display:grid;
+    justify-content:space-around;
+    
+}
+#img{
+    width: 200px;
+    height: 200px;
+    padding-top: 50px;
+}
+#oldPrice{
+    text-decoration: line-through;
+}
+#discount{
+    background-color: crimson;
+    font-size: small;
+}
+body{
+    background-image: url(https://media.pixeltuner.de/wp-content/uploads/2018/06/Shapes-Abstraction-Background-2466799.jpg);
+    color: black;
+}
+.new{
+    background-color: red;
+    float: right;
+    color: white;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transform: rotate(-45deg);
+}
+.inline-block {
+    display: inline-block;
+  }
+  body{
+    height: 100%;
+    background-image:url(ho1.jpg); 
+    background-size: cover;
+}

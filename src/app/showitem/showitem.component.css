@@ -1,0 +1,18 @@
+img{width: 250px;
+height: 200px;}
+.box{
+    width: 1000px;
+    height: 300px;
+position:absolute;
+top: 9.9%;
+left:17%;
+}
+.imgtext{
+    position:absolute;
+    left: 80%;
+}
+#card{
+    display:flex;
+    justify-content: space-around;
+    
+}

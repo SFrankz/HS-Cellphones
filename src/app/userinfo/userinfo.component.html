@@ -1,0 +1,34 @@
+<app-navbar></app-navbar>
+<body >
+        <div class="container" style="text-align: center; margin-left: 430px;">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card user-card">
+                        <div class="card-header">
+                            <h5>Profile</h5>
+                        </div>
+                        <div class="card-block">
+                            <div class="user-image">
+                                <img src={{saveduser.img}} style="height: 300px;width: 250px;" class="img-radius" alt="User-Profile-Image">
+                            </div>
+                            <h6 class="f-w-600 m-t-25 m-b-10">{{saveduser.name}}</h6>
+                            <p class="text-muted">{{saveduser.city}}| {{saveduser.id}} | {{saveduser.email}}</p>
+                            <hr>
+                           
+                           
+                            
+                        </div>
+                    </div>
+                </div>
+                </div>
+             </div>  
+             <button style="text-align: center; margin-left: 880px;" type="button" routerLink="/login" class="btn btn-danger">Log Out</button>
+ 
+    </body>
+    <app-footer></app-footer>
+    
+
+
+
+
+
